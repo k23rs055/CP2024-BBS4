@@ -96,6 +96,15 @@ textarea.form-control {
     color: #dc3545;
 }
 
+.out {
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  height: 40%;
+  background: white;
+}
+
 /* ボタン */
 .button-group {
     display: flex;
@@ -147,6 +156,15 @@ textarea.form-control {
 
 .btn-danger:hover {
     background-color: #c82333;
+}
+
+#btn {
+  font-size: 2em;
+}
+
+#btn::after {
+  content: "▶";
+  color: red;
 }
 
 /* 投稿一覧 */

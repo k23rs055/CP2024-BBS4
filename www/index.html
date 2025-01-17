@@ -513,6 +513,20 @@ window.addEventListener('unload', function() {
         postsListener = null;
     }
 });
+
+$(function() {
+            $("#btn").click(function(e) {
+                main();
+            });
+        });
+
+function main() {
+            $("#disp1").html("投稿内容を入力してください<br>下の投稿一覧に表示されます。");
+            $("#disp1").css("font-size","large");
+            $("#disp1").css("font-family","sans-serif");
+            $("#disp1").css("background-color","lightgray");
+}
+
     </script>
 </head>
 <body>
@@ -560,6 +574,9 @@ window.addEventListener('unload', function() {
             </div>
         </div>
 
+        <div id="disp1" class="out">文字起こし</div>
+        <button id="btn">実行</button>        
+            
         <!-- 投稿一覧 -->
         <div class="posts-container">
             <h2>投稿一覧</h2>
